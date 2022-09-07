@@ -4,20 +4,12 @@ import re
 id_pattern = re.compile(r'^.\d+$')
 
 
-token = os.environ.get("TOKEN")
-app_id = int(os.environ.get("APP_ID"))
-app_hash = os.environ.get("API_HASH")
+token = os.environ.get("5614158736:AAGFS3oL-lcELu7AkFvdrm21ZlPEobTC-n0")
+app_id = int(os.environ.get("12981185"))
+app_hash = os.environ.get("66d4471698f94ec48d1c0a3347bda212")
 allowed = [int(user) if id_pattern.search(user) else user for user in os.environ.get('AUTH_USERS', '').split()]
 
 help_text = """
-Hello I'm Terminal Bot which will Execute your Commands.
-
-With this bot you can execute system commands on your server.
-
-**if you not owner of this bot You can not use me because I'm private...
-So you run one of these for yourself [here](https://github.com/moshe-coh/Terminal-Bot)**
-
-**My Commands For Owner Only:**
 
 🔹 /st - speed test
 🔹 /ip - ip details
